@@ -3,6 +3,7 @@ import { list } from '@keystone-next/keystone/schema';
 import { cloudinaryImage } from '@keystone-next/cloudinary';
 import 'dotenv/config';
 
+// Cloudinary config
 export const cloudinary = {
     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
     apiKey: process.env.CLOUDINARY_KEY,
@@ -17,11 +18,12 @@ export const ProductImage = list({
             label: 'Source'
         }),
         altText: text(),
+        //refrencing product data type and photo field
         product: relationship({ ref: 'Product.photo' }),
     },
     ui: {
         listView: {
-            initialColumns: ['altText', 'image', 'altText']
+            initialColumns: ['altText', 'image', 'product']
         },
     }
 });
