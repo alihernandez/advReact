@@ -1,5 +1,7 @@
+import Products from "../components/Products";
+
 export default function ProductPage() {
     return <div>
-        <p>hello</p>
+        <Products />
         </div>
 }

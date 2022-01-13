@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    font-size: 62.5%;
   }
 
   body {
