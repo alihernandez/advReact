@@ -5,8 +5,8 @@ import Header from "./Header";
 const GlobalStyles = createGlobalStyle`
 @font-face {
   font-family: 'radnika_next';
-  src: url('/static/radnikanext-medium-webfont.woff2')
-  format: ('woff2');
+  src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
+  /* format: ('woff2'); */
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
   *, *:before, *:after {
     box-sizing: inherit;
-    font-size: 62.5%;
+    /* font-size: 10px; */
   }
 
   body {
