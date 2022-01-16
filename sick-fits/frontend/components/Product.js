@@ -13,5 +13,13 @@ export default function Product({ product }) {
         <PriceTag>{FormatMoney(product.price)}</PriceTag>
         <p>{product.description}</p>
         {/* TODO add buttons to edit delete add item */}
+        <div className="buttonList">
+            <Link href={{
+                pathname: 'update',
+                query: {
+                    id: product.id
+                }
+            }}>Edit ✏️</Link>
+        </div>
     </ItemStyles>
 }
